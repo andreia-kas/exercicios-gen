@@ -1,21 +1,20 @@
 programa
-{//Construa um sistema para ler uma variável numérica N e imprimi-la somente se a mesma for maior que 100, 
-	//caso contrário imprimi-la com o valor zero.
+{ /* 2- Obtenha um número digitado pelo usuário e repita a operação de multiplicar ele por
+três (imprimindo o novo valor) até que ele seja maior do que 100. Ex.: se o usuário
+digita 5, deveremos observar na tela a seguinte sequência: 5 15 45 135.*/
 	
 	funcao inicio()
 	{
 		inteiro numero
-
+		
 		escreva("Digite um número: ")
 		leia(numero)
-
-		se(numero > 100){
-		escreva("Você digitou: " + numero) 
-
+			escreva(numero + "\n")
+		
+		enquanto(numero <= 100){
+			numero *= 3
+			escreva(numero + "\n")
 		}
-
-		senao{
-			escreva("0")}
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -23,7 +22,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 270; 
+ * @POSICAO-CURSOR = 452; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
